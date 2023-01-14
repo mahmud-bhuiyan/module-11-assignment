@@ -15,7 +15,7 @@
 
 .primary-button {
   width: 180px;
-  height: 45px;
+  height: 50px;
   background: #ff900e;
   border-radius: 8px;
   border: 0;
@@ -283,8 +283,8 @@ ul li a {
   text-align: center;
 }
 
-.box-img{
-    margin-bottom: 10px;
+.box-img {
+  margin-bottom: 10px;
 }
 /* ============================
       sponsors section styles
@@ -330,7 +330,72 @@ ul li a {
           Contact Us styles
    ============================*/
 
+.contact-us-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  color: #131313;
+}
 
+.contact-us {
+  margin: 100px 240px 130px;
+  height: 560px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-image: url("../images/contact-us.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact-info-title {
+  width: 400px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #131313;
+}
+
+.address,
+.email,
+.number {
+  width: 320px;
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 16px;
+  color: #131313;
+  cursor: pointer;
+}
+.contact-form {
+  margin-left: 150px;
+  width: 360px;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.contact-form textarea,
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+.send-btn {
+  width: 180px;
+  height: 50px;
+  background: #2596be;
+  border-radius: 3px;
+  border: 0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+}
 
 /* ============================
           footer styles
