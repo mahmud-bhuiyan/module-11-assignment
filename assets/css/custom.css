@@ -72,6 +72,7 @@ ul li a {
 /* ============================
           banner styles
    ============================*/
+
 .banner {
   text-align: center;
   margin: 0 240px;
@@ -103,4 +104,64 @@ ul li a {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 45px;
+}
+
+/* ============================
+      sponsors section styles
+   ============================*/
+
+.sponsors {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.sponsors-details {
+  width: 542px;
+  height: 129px;
+  margin: 180px auto 50px;
+}
+
+.sponsors-details .section-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  margin-bottom: 24px;
+}
+
+.sponsors-details .description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+
+.sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-img{
+    margin: 0 27px 130px;
+    filter: grayscale(100%);
+}
+
+/* ============================
+          footer styles
+   ============================*/
+
+footer {
+  background: #fff4e7;
+  border-radius: 8px;
+  margin: 0 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+footer h3 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #424242;
 }
