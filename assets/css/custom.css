@@ -160,6 +160,133 @@ ul li a {
 }
 
 /* ============================
+      types-container section styles
+   ============================*/
+
+.types-container {
+  margin: 130px 240px;
+  display: flex;
+}
+
+.feature-types {
+  width: 500px;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+
+.types-title {
+  width: 430px;
+  height: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #131313;
+  margin-bottom: 20px;
+  padding-left: 18px;
+  border-left: 5px solid #ff900e;
+}
+
+.types-description {
+  width: 420px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  margin-bottom: 10px;
+}
+
+.type {
+  width: 360px;
+  height: 100px;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 25px 25px 15px;
+}
+
+.type-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #131313;
+}
+
+.type-info {
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  margin-top: 10px;
+}
+
+.type-section-img img {
+  width: 100%;
+}
+
+.experience-span {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.type-section-img {
+  position: relative;
+}
+
+.secondary-btn {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transform: translate(-10%, -50%);
+  width: 280px;
+  height: 160px;
+  font-weight: 700;
+  font-size: 50px;
+  color: #ffffff;
+  background: #ff900e;
+  border-radius: 8px;
+  padding: 0;
+  border: 0;
+}
+
+/* ============================
+      facts-section styles
+   ============================*/
+
+.facts-section {
+  margin: 130px 240px 0;
+}
+
+.facts-title {
+  font-weight: 700;
+  font-size: 40px;
+  color: #131313;
+}
+
+.facts-info {
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 80px;
+}
+.box {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.box-img{
+    margin-bottom: 10px;
+}
+/* ============================
       sponsors section styles
    ============================*/
 
@@ -172,7 +299,7 @@ ul li a {
 .sponsors-details {
   width: 542px;
   height: 129px;
-  margin: 180px auto 50px;
+  margin: 120px auto 50px;
 }
 
 .sponsors-details .section-title {
@@ -198,6 +325,12 @@ ul li a {
   margin: 0 27px 130px;
   filter: grayscale(100%);
 }
+
+/* ============================
+          Contact Us styles
+   ============================*/
+
+
 
 /* ============================
           footer styles
