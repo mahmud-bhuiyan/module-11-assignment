@@ -159,18 +159,18 @@ ul li a {
   margin: 32px 0;
 }
 
-/* ============================
-      types-container section styles
-   ============================*/
+/* ========================================
+    Features you will love & enjoy section styles
+   ========================================*/
 
 .types-container {
-  margin: 130px 240px;
+  margin: 150px;
   display: flex;
 }
 
 .feature-types {
   width: 500px;
-  margin-right: 5px;
+  margin-right: 25px;
   margin-top: 20px;
 }
 
@@ -233,7 +233,7 @@ ul li a {
   position: absolute;
   bottom: -100px;
   left: 0;
-  transform: translate(-10%, -50%);
+  transform: translate(-30%, -30%);
   width: 280px;
   height: 160px;
   font-weight: 700;
@@ -250,7 +250,7 @@ ul li a {
    ============================*/
 
 .facts-section {
-  margin: 130px 240px 0;
+  margin: 150px;
 }
 
 .facts-title {
@@ -281,6 +281,7 @@ ul li a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: width 2s, height 2s, transform 2s;
 }
 
 .box-img {
@@ -297,6 +298,14 @@ ul li a {
   font-size: 16px;
 }
 
+.box:hover {
+  width: 200px;
+  height: 200px;
+  background-color: coral;
+  transform: rotate(180deg);
+  color: #ffffff;
+}
+
 /* ============================
       sponsors section styles
    ============================*/
@@ -310,14 +319,14 @@ ul li a {
 .sponsors-details {
   width: 542px;
   height: 129px;
-  margin: 120px auto 50px;
+  margin: 50px auto;
 }
 
 .sponsors-details .section-title {
   font-weight: 700;
   font-size: 45px;
   color: #131313;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .sponsors-details .description {
@@ -333,7 +342,7 @@ ul li a {
 }
 
 .sponsor-img {
-  margin: 0 27px 130px;
+  margin: 50px 27px 130px;
   filter: grayscale(100%);
 }
 
@@ -342,9 +351,11 @@ ul li a {
    ============================*/
 
 .contact-us-section {
-  margin: 80px 240px 130px;
+  margin: 80px 150px 130px;
   background-image: url("../images/hand-painted.webp");
   background-repeat: no-repeat;
+  border-radius: 8px;
+  padding: 0 30px 0 60px;
 }
 
 .contact-us-title {
@@ -352,12 +363,17 @@ ul li a {
   font-weight: 700;
   font-size: 40px;
   color: #131313;
+  padding: 30px 0 50px;
 }
 
 .contact-us {
   height: 560px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-info {
+  margin: 90px 70px;
 }
 
 .contact-info-title {
@@ -379,7 +395,7 @@ ul li a {
   cursor: pointer;
 }
 .contact-form {
-  margin-left: 150px;
+  margin: 40px 80px;
   width: 360px;
   height: auto;
   background: transparent;
@@ -416,7 +432,7 @@ input[type="email"] {
 footer {
   background: #fff4e7;
   border-radius: 8px;
-  margin: 0 240px;
+  margin: 0 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -434,7 +450,7 @@ footer h3 {
         mobile / small device
    ==============================*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   .primary-button {
     width: 120px;
     height: 40px;
@@ -547,9 +563,9 @@ footer h3 {
     margin: 15px 0;
   }
 
-  /* ====================================
-      types-container section styles
-   ======================================*/
+  /* =================================================
+      Features you will love & enjoy section styles
+   ===================================================*/
 
   .types-container {
     margin: 0 30px 30px;
@@ -558,12 +574,12 @@ footer h3 {
 
   .feature-types {
     width: auto;
+    margin: 0;
   }
 
   .types-title {
     width: auto;
     height: auto;
-    font-weight: 600;
     margin-bottom: 20px;
   }
 
@@ -584,12 +600,14 @@ footer h3 {
   }
 
   .secondary-btn {
-    position: absolute;
-    bottom: -160px;
-    left: 50px;
+    left: 60px;
+    bottom: -100px;
     font-weight: 600;
     font-size: 40px;
     border-radius: 5px;
+    height: auto;
+    width: 250px;
+    padding: 20px;
   }
 
   /* ============================
@@ -693,6 +711,9 @@ footer h3 {
     text-align: center;
   }
 
+  .contact-info {
+    margin: 0;
+  }
   .contact-info-title {
     width: auto;
     padding-bottom: 10px;
