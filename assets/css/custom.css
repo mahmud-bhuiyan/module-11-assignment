@@ -40,9 +40,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 240px;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  margin: 0 150px;
+  padding: 50px 0 100px;
 }
 
 .site-name {
@@ -75,7 +74,7 @@ ul li a {
 
 .banner {
   text-align: center;
-  margin: 0 240px;
+  margin: 0 150px;
 }
 
 .banner-details {
@@ -113,7 +112,7 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 240px;
+  margin: 0 150px;
 }
 
 .feature {
@@ -157,6 +156,7 @@ ul li a {
   font-weight: 400;
   font-size: 16px;
   color: #727272;
+  margin: 32px 0;
 }
 
 /* ============================
@@ -286,6 +286,17 @@ ul li a {
 .box-img {
   margin-bottom: 10px;
 }
+
+.box-info > .info-title {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.box-info > .info-description {
+  font-weight: 400;
+  font-size: 16px;
+}
+
 /* ============================
       sponsors section styles
    ============================*/
@@ -306,7 +317,7 @@ ul li a {
   font-weight: 700;
   font-size: 45px;
   color: #131313;
-  margin-bottom: 24px;
+  margin-bottom: 50px;
 }
 
 .sponsors-details .description {
@@ -330,6 +341,12 @@ ul li a {
           Contact Us styles
    ============================*/
 
+.contact-us-section {
+  margin: 80px 240px 130px;
+  background-image: url("../images/hand-painted.webp");
+  background-repeat: no-repeat;
+}
+
 .contact-us-title {
   text-align: center;
   font-weight: 700;
@@ -338,20 +355,16 @@ ul li a {
 }
 
 .contact-us {
-  margin: 100px 240px 130px;
   height: 560px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-image: url("../images/contact-us.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .contact-info-title {
   width: 400px;
   padding-bottom: 20px;
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 35px;
   color: #131313;
 }
 
@@ -369,9 +382,7 @@ ul li a {
   margin-left: 150px;
   width: 360px;
   height: auto;
-  background: #ffffff;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
-  border-radius: 8px;
+  background: transparent;
   padding: 25px;
 }
 
@@ -384,6 +395,7 @@ input[type="email"] {
   padding: 10px;
   margin: 10px 0;
   border-radius: 3px;
+  background: transparent;
 }
 
 .send-btn {
@@ -415,4 +427,311 @@ footer h3 {
   font-weight: 400;
   font-size: 20px;
   color: #424242;
+}
+
+/* ==============================
+          media queries for 
+        mobile / small device
+   ==============================*/
+
+@media only screen and (max-width: 768px) {
+  .primary-button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  /* ============================
+          navbar styles
+   ============================*/
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    padding: 30px 0 0;
+  }
+
+  .site-name {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li a {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  /* ============================
+          banner styles
+   ============================*/
+
+  .banner {
+    margin: 0 30px;
+  }
+
+  .banner-details {
+    width: auto;
+  }
+
+  .banner-title {
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 80px;
+  }
+
+  .banner-description {
+    font-size: 14px;
+    margin: 32px 40px 0;
+  }
+
+  .banner-img > img {
+    border-radius: 5px;
+    margin-bottom: 45px;
+  }
+
+  /* ============================
+      features section styles
+   ============================*/
+  .features {
+    flex-direction: column;
+    margin: 150px 0;
+  }
+
+  .feature {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+  }
+
+  .feature-img {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .features-details {
+    margin: 0 10px;
+    padding: 40px;
+    width: auto;
+    height: auto;
+  }
+
+  .features-title {
+    font-size: 40px;
+  }
+
+  .of-our-span,
+  .features-span {
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  .features-span {
+    color: #ff900e;
+  }
+
+  .features-description {
+    font-size: 14px;
+    margin: 15px 0;
+  }
+
+  /* ====================================
+      types-container section styles
+   ======================================*/
+
+  .types-container {
+    margin: 0 30px 30px;
+    flex-direction: column;
+  }
+
+  .feature-types {
+    width: auto;
+  }
+
+  .types-title {
+    width: auto;
+    height: auto;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .types-description {
+    width: auto;
+    padding: 0 20px;
+  }
+
+  .type {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    padding: 25px 25px 30px;
+  }
+
+  .type-section-img {
+    margin-top: 20px;
+  }
+
+  .secondary-btn {
+    position: absolute;
+    bottom: -160px;
+    left: 50px;
+    font-weight: 600;
+    font-size: 40px;
+    border-radius: 5px;
+  }
+
+  /* ============================
+      facts-section styles
+   ============================*/
+
+  .facts-section {
+    margin: 250px 30px 200px;
+  }
+
+  .facts-title {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .facts-info {
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+
+  .boxes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  .box {
+    width: auto;
+    height: 180px;
+    border-radius: 5px;
+    display: grid;
+  }
+
+  .box-img {
+    margin-bottom: 10px;
+  }
+
+  .box-info > .info-title {
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  /* ============================
+      sponsors section styles
+   ============================*/
+
+  .sponsors {
+    /* border: 5px solid red; */
+    margin: 0 30px 180px;
+  }
+
+  .sponsors-details {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .sponsors-details > .section-title {
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .sponsors-details > .description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    width: auto;
+    padding: 0 20px;
+  }
+
+  .sponsor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sponsor-img {
+    margin: 30px;
+  }
+
+  /* ============================
+          Contact Us styles
+   ============================*/
+
+  .contact-us-section {
+    border-radius: 5px;
+    margin: 0 30px;
+    padding: 20px;
+  }
+
+  .contact-us-title {
+    font-weight: 600;
+    padding: 20px 0;
+  }
+
+  .contact-us {
+    height: auto;
+    width: auto;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contact-info-title {
+    width: auto;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .address,
+  .email,
+  .number {
+    width: auto;
+    margin: auto;
+    padding: 5px 60px;
+  }
+
+  .contact-form {
+    margin: 50px 0 0;
+    width: auto;
+    background: transparent;
+    padding: 20px 0 5px;
+  }
+
+  .send-btn {
+    margin-top: 10px;
+  }
+
+  /* ============================
+          footer styles
+   ============================*/
+
+  footer {
+    border-radius: 5px;
+    margin: 30px 30px 0;
+    height: auto;
+  }
+
+  footer h3 {
+    text-align: center;
+    padding: 15px;
+  }
 }
