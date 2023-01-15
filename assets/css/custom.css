@@ -108,6 +108,7 @@ ul li a {
 /* ============================
       features section styles
    ============================*/
+   
 .features {
   display: flex;
   justify-content: center;
@@ -504,7 +505,7 @@ footer h3 {
 
   .banner-title {
     font-weight: 600;
-    font-size: 35px;
+    font-size: 40px;
     margin-top: 80px;
   }
 
@@ -523,7 +524,7 @@ footer h3 {
    ============================*/
   .features {
     flex-direction: column;
-    margin: 150px 0;
+    margin: 40px 0;
   }
 
   .feature {
@@ -613,7 +614,7 @@ footer h3 {
    ============================*/
 
   .facts-section {
-    margin: 250px 30px 200px;
+    margin: 150px 30px 100px;
   }
 
   .facts-title {
@@ -654,8 +655,7 @@ footer h3 {
    ============================*/
 
   .sponsors {
-    /* border: 5px solid red; */
-    margin: 0 30px 180px;
+    margin: 0 30px 40px;
   }
 
   .sponsors-details {
@@ -666,7 +666,7 @@ footer h3 {
 
   .sponsors-details > .section-title {
     font-weight: 600;
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 20px;
   }
 
